@@ -2,10 +2,35 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>Calendar</title>
+    <meta content="Jorge Garrone" name="author" />
 	<meta charset="utf-8" />
 </head>
 <body>
+    <h1 align="center">Calendario</h1>
+    <form name="CalendarSettings" action="Calendar.html">
+        <table width="70%" align="center">
+            <tbody>
+                <tr>
+                    <td>
 
+                        Seleccione la fecha inicial:
+                        Año (YYYY): <input name="Year" size="3" type="text">
+                        Mes (MM): <input name="Month" size="3" type="text">
+                        Dia (DD): <input name="Day" size="3" type="text">
+                        <br /><br />
+                        Seleccione el número de días: <input name="Days" size="2" type="text">
+                        <br /><br />
+                        Ingrese su código de país: <input name="CountryCode" size="2" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" align="center" style="text-align:center;">
+                        <input name="submit" value="Crear calendario" onclick="showCalendar()" type="button">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
 </body>
 </html>
